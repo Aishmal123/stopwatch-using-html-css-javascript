@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     display: flex;
@@ -49,6 +50,11 @@ button{
     font-size: 1.5rem;
 
 }
+#splitBtn{
+    background-color: #01b8f0;
+    font-size: 1.5rem;
+
+}
 .display{
     border: #324729;
     background-color: #80CED7;
@@ -58,4 +64,64 @@ button{
     margin: 35px;
     font-size: 4rem;
     font-weight: 900;
+
+}
+#lapse li {
+    color: black; 
+    list-style: decimal;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+@media (max-width: 768px) {
+    .stopwatch {
+        margin: 15px 0;
+    }
+
+    button {
+        padding: 18px 18px;
+        margin: 0.4rem;
+        min-width: 100px;
+    }
+
+    .display {
+        /* margin: 15px 10px;
+         */
+         margin-top: 4rem;
+        padding: 2rem 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .heading {
+        padding: 12px 8px;
+    }
+
+    .stopwatch {
+        margin: 10px 0;
+    }
+
+    button {
+        padding: 15px 15px;
+        margin: 0.3rem;
+        min-width: 90px;
+        border-radius: 15px;
+    }
+
+    .display {
+        margin: 50px 8px;
+        padding: 1.5rem 1rem;
+        border-radius: 12px;
+        min-width: 150px;
+    }
+}
+@media (max-width: 320px) {
+    button {
+        padding: 12px 12px;
+        min-width: 80px;
+        font-size: 0.9rem;
+    }
+
+    .display h1{
+        min-width: 100px;
+        /* padding: 1rem; */
+    }
 }
