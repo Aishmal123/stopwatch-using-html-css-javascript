@@ -22,7 +22,6 @@ stopButton.addEventListener('click',() =>{
     
 });
 resetButton.addEventListener(('click'),() =>{
-    
         clearInterval(timeInterval);  
         display.innerHTML=`00:00:00`;
         hour=sec=min= 0;
